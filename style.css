@@ -1,0 +1,183 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
+nav{
+        /* background-color: red; */
+        margin: 0px 10px;
+    }
+}
+
+.LogoNav{
+    display: flex;
+}
+
+.loginbtn{
+    display: flex;
+    align-items: center;
+
+button{
+        background-color: transparent;
+        border: 1px solid lightgray;
+        height: 35px;
+        width: 80px;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+}
+
+.iconMenu{
+    display: none;
+}
+
+@media (max-width:768px){
+    .navigation{
+        display: none;
+    }
+    .loginbtn{
+        display: none;
+    }
+    .iconMenu{
+        display: block;
+    }
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    text-wrap: wrap; 
+    height: 500px;
+    /* padding: 10px; */
+}
+
+.textbox{
+    width: 620px;
+    text-wrap: wrap;
+}
+
+.text{
+    /* display: flex; */
+    margin-left: 144px;
+h1{
+        font-size: 80px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: -8px;
+    }
+    
+p{
+        font-family: Soin Sans Roman;
+        font-size: 20px;
+        width: 400px;
+    }
+    
+button{
+        background-color: black;
+        color: white;
+        height: 35px;
+        width: 100px;
+        border-radius: 10px;
+        margin-top: 16px;
+    }
+}
+
+.images{
+    margin-left: 144px;
+    margin-top: 88px;
+    align-items: center;
+
+img{
+   margin-right: 24px;
+}
+    
+}
+.imgBox{
+    margin-right: 144px;
+}
+
+.image-hero-mobile{
+    display: none;     
+   }
+
+.image-hero-desktop{
+    /* margin-right: 144px; */
+    display: block;
+}
+
+@media (max-width: 768px) {  
+    .hero {  
+      flex-direction: column; /* Change to horizontal on small screens */  
+    }  
+    
+    .textbox {  
+      order: 2; /* Make Div 1 come second */  
+      align-items: center;
+      margin-top: 72px;
+      width: 620px;
+      /* background-color: crimson; */
+      /* margin-right: 100px; */
+    }
+
+    .text{
+        /* margin-left: 40px; */
+        margin-right: 100px;
+        text-align: center;
+        /* background-color: red; */
+    h1{
+        text-align: center;
+        font-size: 40px;
+        /* background-color: brown; */
+        /* margin-top: 24px; */
+    }
+    p{
+        text-align: center;
+        /* background-color: cadetblue; */
+    }
+    button{
+        /* background-color: chartreuse; */
+        width: 120px;
+        height: 40px;
+            }
+    }
+
+    .images{
+        width: 540px;
+        /* background-color: black; */
+        align-items: center;
+        margin-left: 40px;
+    
+    img{
+        margin-left: 16px;
+        /* background-color: aqua; */
+        }
+            }       
+    .imgBox {  
+      order: 1; /* Make Div 2 come first */  
+      align-items: center;
+      margin-right: 0px;
+      /* background-color: blue; */
+
+    }  
+    
+    .image-hero-mobile{
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 500px;
+    }
+
+    .image-hero-desktop{
+        display: none;
+    }
+
+  }  
